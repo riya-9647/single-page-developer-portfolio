@@ -146,9 +146,13 @@ body {
 
 .accessibility {
   margin-top: 50px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.accessibility .access {
+  width: 18%;
 }
 .accessibility .access h1 {
   font-weight: 800;
