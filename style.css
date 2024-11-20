@@ -1,0 +1,319 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  background-color: var(--chinese-black);
+  color: var(--white);
+}
+
+:root {
+  --chinese-black: hsl(0, 0%, 8%);
+  --eucalyptus: hsl(153, 71%, 59%);
+  --raisin-black: hsl(0, 0%, 14%);
+  --light-silver: hsl(0, 0%, 85%);
+  --white: hsl(0, 0%, 100%);
+  --bittersweet: hsl(7, 100%, 68%);
+}
+
+/* utility class */
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* header start */
+
+.firstheader {
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 15px; */
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  padding: 2rem 0;
+}
+
+.navlogo {
+  display: flex;
+  justify-content: space-between;
+  width: 15%;
+}
+.navlogo li {
+  list-style-type: none;
+}
+
+/* header end */
+
+/* element add */
+.element {
+  width: 20%;
+  height: 20vh;
+  position: relative;
+}
+
+.elementbg img {
+  width: 30%;
+  height: 20vh;
+  position: absolute;
+  left: -5%;
+}
+
+/* element end */
+
+/* hero section start */
+
+.hero {
+  width: 100%;
+  height: 55vh;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+}
+
+.hero .left,
+.hero .right {
+  width: 50%;
+}
+.hero .left h1 {
+  font-weight: 900;
+  font-size: 75px;
+}
+.hero .left p {
+  margin-top: 30px;
+  width: 60%;
+  line-height: 1.75;
+  font-size: 18px;
+  padding-bottom: 40px;
+}
+
+.hero .right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.hero .right img {
+  width: 22%;
+  position: absolute;
+  top: 0;
+  right: 12%;
+  z-index: 1;
+}
+.hero .right .circle {
+  width: 20%;
+  position: relative;
+  top: 0;
+  left: -48%;
+}
+
+/* hero section end */
+
+/* language section start */
+
+.language {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.language .html h1 {
+  font-weight: 800;
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+.language .html p {
+  font-size: 20px;
+}
+
+/* language section end */
+
+/*  accessibility section start */
+
+.accessibility {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.accessibility .access h1 {
+  font-weight: 800;
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+.accessibility .access p {
+  font-size: 20px;
+}
+
+/* accessibility section end */
+
+/* secondelement start  */
+.secondelement .sndelement {
+  width: 20%;
+  height: 20vh;
+  position: relative;
+  left: 85%;
+}
+.secondelement img {
+  width: 30%;
+  height: 15vh;
+  position: absolute;
+  left: 80%;
+  bottom: -25%;
+}
+/* secondelement end */
+
+/* wrapper section start  */
+
+.wrapper {
+  /* margin: 90px 0; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-top: 50px; */
+  margin-bottom: 50px;
+}
+.wrapper h1 {
+  font-weight: 900;
+  font-size: 75px;
+}
+.btn {
+  background-color: var(--chinese-black);
+  border: none;
+  color: var(--white);
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--eucalyptus);
+  font-size: 18px;
+  /* letter-spacing: 5; */
+  padding-bottom: 10px;
+}
+.btn:hover {
+  color: var(--eucalyptus);
+}
+
+/* wrapper section end  */
+
+/* projects section start  */
+
+.project {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.project .leftproject {
+  width: 50%;
+}
+.leftproject img {
+  width: 95%;
+}
+.leftproject h3 {
+  margin: 10px 0;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.leftproject .inner {
+  width: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+.project .rightproject {
+  width: 50%;
+}
+.rightproject img {
+  width: 95%;
+}
+.rightproject h3 {
+  margin: 10px 0;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.rightproject .inner {
+  width: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* project section end  */
+
+/* contact section start */
+
+.contact {
+  width: 100%;
+  height: 45vh;
+  background-color: var(--raisin-black);
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 200px;
+  border-bottom: 1px solid var(--light-silver);
+}
+.contact .leftcontact {
+  width: 28%;
+}
+
+.contact .leftcontact h1 {
+  font-weight: 900;
+  font-size: 75px;
+  padding-bottom: 20px;
+}
+.rightcontact {
+  width: 30%;
+  flex-direction: column;
+}
+form input {
+  border: none;
+  color: var(--raisin-black);
+  background-color: var(--raisin-black);
+  border-bottom: 2px solid var(--light-silver);
+  padding: 25px 0;
+  width: 100%;
+  font-size: 17px;
+}
+.last .inputtwo {
+  padding-top: 25px;
+  padding-bottom: 60px;
+}
+.btnsend {
+  border: none;
+  color: var(--light-silver);
+  background-color: var(--raisin-black);
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--eucalyptus);
+  padding-top: 30px;
+  margin-left: 340px;
+  padding-bottom: 10px;
+}
+
+/* contact section end  */
+
+/* footer section start */
+
+.last {
+  width: 100%;
+  height: 30vh;
+  background-color: var(--raisin-black);
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 200px;
+}
+.last .footerlogo {
+  display: flex;
+  justify-content: space-between;
+  width: 15%;
+}
+.last .footerlogo li {
+  list-style-type: none;
+}
+
+/* footer section end */
