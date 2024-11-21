@@ -32,7 +32,7 @@ body {
   width: 100%;
 }
 
-.nav {
+.firstheader .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -152,7 +152,7 @@ body {
   align-items: center;
 }
 .accessibility .access {
-  width: 18%;
+  /* width: 18%; */
 }
 .accessibility .access h1 {
   font-weight: 800;
@@ -260,12 +260,14 @@ body {
 
 .contact {
   width: 100%;
-  height: 45vh;
+  padding-top: 30px;
+  height: 40vh;
   background-color: var(--raisin-black);
+  border-bottom: 1px solid var(--light-silver);
+}
+.contact .info {
   display: flex;
   justify-content: space-between;
-  padding: 40px 200px;
-  border-bottom: 1px solid var(--light-silver);
 }
 .contact .leftcontact {
   width: 28%;
@@ -300,7 +302,7 @@ form input {
   text-transform: uppercase;
   border-bottom: 2px solid var(--eucalyptus);
   padding-top: 30px;
-  margin-left: 340px;
+  /* margin-left: 340px; */
   padding-bottom: 10px;
 }
 
@@ -310,7 +312,7 @@ form input {
 
 .last {
   width: 100%;
-  height: 30vh;
+  height: 20vh;
   background-color: var(--raisin-black);
   display: flex;
   justify-content: space-between;
@@ -326,3 +328,95 @@ form input {
 }
 
 /* footer section end */
+
+/* mobile responsiveness */
+
+@media (max-width: 768px) {
+  .firstheader {
+    width: 100%;
+  }
+  .firstheader .nav {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero {
+    flex-direction: column;
+    width: 100%;
+  }
+  .hero .left {
+    margin-top: 120px;
+    margin-left: 30px;
+  }
+  .hero .left,
+  .hero .right {
+    width: 100%;
+  }
+  .hero .left h1 {
+    font-weight: 700;
+    font-size: 35px;
+  }
+  .hero .left p {
+    width: 100%;
+  }
+  .hero .right {
+    flex-direction: column;
+    width: 100%;
+  }
+  .hero .right img {
+    width: 75vw;
+    height: 50vh;
+    position: absolute;
+  }
+  .language {
+    flex-direction: column;
+    width: 100%;
+  }
+  .accessibility {
+    flex-direction: column;
+    width: 100%;
+  }
+  .wrapper {
+    width: 100%;
+  }
+  .wrapper h1 {
+    font-size: 35px;
+  }
+  .project {
+    width: 100%;
+    flex-direction: column;
+  }
+  .leftproject img {
+    width: 100%;
+  }
+  .rightproject img {
+    width: 100%;
+  }
+  .contact {
+    width: 100%;
+    padding: 20px;
+  }
+  .contact .info {
+    width: 100%;
+    /* height: 100vh; */
+    flex-direction: column;
+  }
+  .contact .leftcontact {
+    width: 100%;
+  }
+  .contact .leftcontact h1 {
+    font-size: 50px;
+  }
+  .contact .leftcontact p {
+    width: 100%;
+  }
+  .rightcontact {
+    width: 100%;
+    display: flex;
+  }
+
+  .last {
+    flex-direction: column;
+    width: 100%;
+  }
+}
