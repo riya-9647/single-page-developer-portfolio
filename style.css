@@ -295,6 +295,10 @@ form input {
   padding-top: 25px;
   padding-bottom: 60px;
 }
+.sendbtn {
+  display: flex;
+  flex-direction: flex-end;
+}
 .btnsend {
   border: none;
   color: var(--light-silver);
@@ -314,9 +318,11 @@ form input {
   width: 100%;
   height: 20vh;
   background-color: var(--raisin-black);
+}
+.last .lastfooter {
   display: flex;
   justify-content: space-between;
-  padding: 40px 200px;
+  padding-top: 40px;
 }
 .last .footerlogo {
   display: flex;
@@ -338,6 +344,9 @@ form input {
   .firstheader .nav {
     flex-direction: column;
     width: 100%;
+  }
+  .navlogo {
+    width: 30%;
   }
 
   .hero {
@@ -370,6 +379,7 @@ form input {
   }
   .language {
     flex-direction: column;
+    margin-top: 50px;
     width: 100%;
   }
   .accessibility {
@@ -382,6 +392,10 @@ form input {
   .wrapper h1 {
     font-size: 35px;
   }
+  .btn {
+    margin-left: 80px;
+    margin-bottom: 20px;
+  }
   .project {
     width: 100%;
     flex-direction: column;
@@ -391,14 +405,16 @@ form input {
   }
   .rightproject img {
     width: 100%;
+    margin-top: 20px;
   }
   .contact {
     width: 100%;
+    height: 100%;
+
     padding: 20px;
   }
   .contact .info {
     width: 100%;
-    /* height: 100vh; */
     flex-direction: column;
   }
   .contact .leftcontact {
@@ -415,8 +431,16 @@ form input {
     display: flex;
   }
 
-  .last {
+  .last .lastfooter {
     flex-direction: column;
+    align-items: center;
     width: 100%;
+    /* height: 100vh; */
+  }
+  .last .leftfooter {
+    padding-bottom: 20px;
+  }
+  .last .footerlogo {
+    width: 30%;
   }
 }
