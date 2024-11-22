@@ -8,6 +8,7 @@ body {
   font-family: "Space Grotesk", sans-serif;
   background-color: var(--chinese-black);
   color: var(--white);
+  overflow-x: hidden;
 }
 
 :root {
@@ -129,8 +130,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
-
+.language .html {
+  width: 30%;
+}
 .language .html h1 {
   font-weight: 800;
   font-size: 50px;
@@ -144,8 +148,8 @@ body {
 
 /*  accessibility section start */
 
-.accessibility {
-  margin-top: 50px;
+/* .accessibility {
+  margin-top: 30px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -153,7 +157,7 @@ body {
 }
 .accessibility .access {
   /* width: 18%; */
-}
+/* }
 .accessibility .access h1 {
   font-weight: 800;
   font-size: 50px;
@@ -161,7 +165,8 @@ body {
 }
 .accessibility .access p {
   font-size: 20px;
-}
+} */
+*/
 
 /* accessibility section end */
 
@@ -189,7 +194,7 @@ body {
   justify-content: space-between;
   align-items: center;
   /* margin-top: 50px; */
-  margin-bottom: 50px;
+  margin: 50px 0;
 }
 .wrapper h1 {
   font-weight: 900;
@@ -316,7 +321,7 @@ form input {
 
 .last {
   width: 100%;
-  height: 20vh;
+  height: 200px;
   background-color: var(--raisin-black);
 }
 .last .lastfooter {
@@ -346,16 +351,26 @@ form input {
     width: 100%;
   }
   .navlogo {
-    width: 30%;
+    width: 40%;
+    margin-top: 20px;
   }
+  .elementbg img {
+    z-index: 3;
+    width: 70%;
+    left: -15%;
 
+    bottom: 10%;
+  }
   .hero {
     flex-direction: column;
+    text-align: center;
     width: 100%;
+    margin-bottom: 90px;
   }
   .hero .left {
-    margin-top: 120px;
-    margin-left: 30px;
+    margin-top: 150px;
+
+    /* margin-left: 30px; */
   }
   .hero .left,
   .hero .right {
@@ -373,37 +388,66 @@ form input {
     width: 100%;
   }
   .hero .right img {
-    width: 75vw;
-    height: 50vh;
+    width: 70%;
+    /* height: 65vh; */
     position: absolute;
+    transform: translateX(-50%);
+
+    left: 50%;
   }
   .language {
     flex-direction: column;
-    margin-top: 50px;
+    /* margin-top: 120px; */
+    width: 100%;
+    text-align: center;
+  }
+  .language .html {
     width: 100%;
   }
-  .accessibility {
+  .language .html h1 {
+    font-size: 40px;
+  }
+  .secondelement {
+  }
+  .secondelement img {
+    overflow: hidden;
+
+    width: 100%;
+    bottom: -100%;
+    /* right: 15%; */
+  }
+  /* .accessibility {
     flex-direction: column;
     width: 100%;
   }
+  .accessibility .access h1 {
+    font-size: 40px;
+  } */
   .wrapper {
     width: 100%;
+    padding: 0 20px;
   }
   .wrapper h1 {
     font-size: 35px;
   }
-  .btn {
-    margin-left: 80px;
-    margin-bottom: 20px;
-  }
+
   .project {
     width: 100%;
     flex-direction: column;
   }
-  .leftproject img {
+  .project .leftproject {
+    width: 90%;
+  }
+  .leftproject .inner {
+    margin-bottom: 20px;
+  }
+  .l .leftproject img {
     width: 100%;
   }
-  .rightproject img {
+  .project .rightproject {
+    width: 90%;
+  }
+  .l .rightproject img {
     width: 100%;
     margin-top: 20px;
   }
@@ -441,6 +485,6 @@ form input {
     padding-bottom: 20px;
   }
   .last .footerlogo {
-    width: 30%;
+    width: 40%;
   }
 }
